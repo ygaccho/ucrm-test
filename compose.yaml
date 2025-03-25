@@ -41,3 +41,4 @@ services:
     container_name: "ucrm-redis"
     ports:
       - 16379:6379
+
