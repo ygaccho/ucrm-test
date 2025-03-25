@@ -33,4 +33,4 @@ WORKDIR /src
 ADD . /src/storage
 RUN chown -R www-data:www-data /src/storage
 
-ENTRYPOINT [ "bash", "-c", "composer install; npm install; exec php-fpm" ]
+ENTRYPOINT [ "bash", "-c", "composer install; npm install; composer require barryvdh/laravel-debugbar;exec php-fpm" ]
